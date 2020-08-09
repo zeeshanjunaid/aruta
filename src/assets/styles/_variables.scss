@@ -1,0 +1,26 @@
+//Colors
+$color-purple: #a90ee6;
+$color-purple-light: #8d66b6;
+
+$color-blue: #0084ff;
+$color-dark-blue: #1b3d7a;
+$color-darker-blue: #3118a8;
+
+$color-white: #fff;
+$color-black: #000;
+$color-grey: #323232;
+
+//Gradients
+$gradient-primary: linear-gradient(to right, $color-purple, $color-darker-blue);
+$gradient-secondary: linear-gradient(
+  to right,
+  $color-purple 0%,
+  $color-darker-blue 45%,
+  $color-purple 100%
+);
+
+//Font Size
+$default-font-size: 1.6rem;
+
+//Font Families
+$default-font-family: "Poppins", sans-serif;

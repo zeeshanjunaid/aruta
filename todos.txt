@@ -1,0 +1,7 @@
+Page 1
+
+1 => integrate scss
+2 => integrate bootstrap
+3 => setting up css
+4 => code left section
+5 => code login section

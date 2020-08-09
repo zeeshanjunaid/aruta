@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container fluid>
+      <b-row align-v="center" align-h="center" class="custom-section">
+        <b-col lg="6" md="12" class="d-flex justify-content-center align-items-center">
+          <Login />
+        </b-col>
+        <b-col lg="6" md="12" class="d-flex justify-content-center align-items-center">
+          <ProcedureSection />
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Login from "./components/Login";
+import ProcedureSection from "./components/ProcedureSection";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    ProcedureSection,
+    Login,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+

@@ -1,0 +1,20 @@
+.gradient-btn {
+  background-color: $color-purple;
+  background-image: $gradient-primary !important;
+  border: 0px;
+  color: $color-white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  position: relative;
+  padding: 1.5rem 4rem;
+  border-radius: 20rem;
+  background-size: 200% auto;
+  transition: all 1.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  &:hover,
+  &:focus &:active {
+    color: $color-white;
+    background-image: $gradient-secondary !important;
+    background-position: right center;
+  }
+}

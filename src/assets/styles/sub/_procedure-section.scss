@@ -1,0 +1,118 @@
+.procedure-section {
+  .top {
+    padding: 2rem 8rem;
+    @media (max-width: 992px) {
+      padding: 2rem 4rem;
+    }
+    img {
+      margin-bottom: 2rem;
+      max-width: 4.2rem;
+    }
+    h3 {
+      font-size: 2.8rem;
+      color: $color-white;
+      text-align: center;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.8rem;
+      color: $color-white;
+      text-align: center;
+      font-weight: 200;
+    }
+    a {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+  }
+  .steps {
+    margin-top: 3rem;
+    padding: 0 8rem;
+    @media (max-width: 992px) {
+      padding: 8rem;
+    }
+
+    .step {
+      margin: 0 4rem;
+      position: relative;
+      transition: all 0.5s;
+      margin: 0 auto;
+      margin-bottom: 1.5rem !important;
+      @media (min-width: 1300px) {
+        width: 70%;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background-color: $color-white;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        transform: translate(-2.5rem, 0.9rem);
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        background-color: $color-white;
+        width: 0.15rem;
+        height: 94%;
+        border-radius: 25rem;
+        transform: translate(-2.125rem, 2.3rem);
+      }
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+      &:hover {
+        .step-bottom {
+          transform: scale(1.025);
+        }
+      }
+      .step-top {
+        margin-bottom: 0.25rem;
+        span {
+          color: $color-white;
+          font-size: 1.2rem;
+          font-weight: 200;
+        }
+      }
+      .step-bottom {
+        background-color: $color-white;
+        border-radius: 1rem;
+        padding: 0.75rem 1rem;
+        display: grid;
+        width: 100%;
+        transition: all 0.5s;
+        grid-template-columns: 1fr 9fr;
+        align-items: center;
+        img {
+          width: 5rem;
+          justify-self: right;
+          margin-right: 1rem;
+        }
+        div {
+          padding: 0 1rem 0 0;
+
+          h4 {
+            color: $color-dark-blue;
+            font-weight: bold;
+            font-size: 1.4rem;
+            //   margin-top: 1rem;
+          }
+          p {
+            color: $color-grey;
+            font-size: 1rem;
+            margin-bottom: 0;
+            font-weight: 200;
+          }
+        }
+      }
+    }
+  }
+}
