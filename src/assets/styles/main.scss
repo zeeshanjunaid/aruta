@@ -5,6 +5,8 @@
 @import "./utilities";
 @import "./sub/procedure-section";
 @import "./sub/login-section";
+@import "./sub/forget-password";
+@import "./sub/reset-password";
 
 *,
 *::after,
@@ -30,9 +32,9 @@ html {
 }
 body {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 
   @media (min-width: 992px) {
-    overflow: hidden;
     overscroll-behavior: none;
   }
 
@@ -44,16 +46,30 @@ body {
     font-family: $default-font-family;
     color: $color-purple;
     font-size: $default-font-size;
-    @media (min-width: 992px) {
-      height: 100vh;
-    }
+    min-height: 100vh;
   }
   .container-fluid {
-    // width: 1480px;
     height: 100%;
     .custom-section {
-      // padding: 6rem 8rem !important;
       height: 100%;
+      min-height: 100vh;
+    }
+  }
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 992px) {
+    padding: 8rem 0;
+  }
+  .logo {
+    text-align: center;
+    margin-bottom: 6rem;
+    img {
+      width: 100%;
     }
   }
 }

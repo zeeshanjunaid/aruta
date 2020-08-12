@@ -1,114 +1,98 @@
-.login-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  @media (max-width: 992px) {
-    padding: 8rem 0;
-  }
-  .logo {
+.login {
+  color: $color-white;
+  .heading {
     text-align: center;
-    margin-bottom: 6rem;
-    img {
-      max-width: 23rem;
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: $color-white;
+  }
+  .sub {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 200;
+    margin-top: 2rem;
+    a {
+      color: $color-blue;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 0.5rem;
     }
   }
-  .login {
-    color: $color-white;
-    .heading {
-      text-align: center;
-      font-weight: bold;
-      font-size: 2.8rem;
-      color: $color-white;
-    }
-    .sub {
-      text-align: center;
-      font-size: 1.4rem;
-      font-weight: 200;
-      margin-top: 2rem;
-      a {
-        color: $color-blue;
-        text-decoration: none;
-        font-weight: bold;
-        margin-left: 0.5rem;
+  .social-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    @media (max-width: 341px) {
+      flex-direction: column;
+      justify-content: center;
+      a:first-child {
+        margin-bottom: 1rem;
       }
     }
-    .social-buttons {
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-align: center;
+      padding: 1.5rem 3.5rem;
+      border-radius: 25rem;
+    }
+    a.fb {
+      background-color: #3c66c4;
+      color: $color-white;
+      margin-right: 1rem;
+    }
+    a.gmail {
+      color: $color-grey;
+      background-color: $color-white;
+      img {
+        margin-right: 1rem;
+        max-width: 2rem;
+      }
+    }
+  }
+  .login-form {
+    padding: 4rem 0;
+    .form-group {
+      margin-bottom: 2.5rem;
+    }
+    .links {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin-top: 2rem;
-      @media (max-width: 341px) {
-        flex-direction: column;
-        justify-content: center;
-        a:first-child {
-          margin-bottom: 1rem;
-        }
-      }
-      a {
-        text-decoration: none;
-        font-weight: bold;
+      .fp {
         font-size: 1.4rem;
-        text-align: center;
-        padding: 1.5rem 3.5rem;
-        border-radius: 25rem;
-      }
-      a.fb {
-        background-color: #3c66c4;
-        color: $color-white;
-        margin-right: 1rem;
-      }
-      a.gmail {
-        color: $color-grey;
-        background-color: $color-white;
-        img {
-          margin-right: 1rem;
-          max-width: 2rem;
-        }
+        text-decoration: none;
       }
     }
-    .login-form {
-      padding: 4rem 0;
-      .form-group {
-        margin-bottom: 2.5rem;
-      }
-      .links {
-        display: flex;
-        justify-content: space-between;
-        .fp {
-          font-size: 1.4rem;
-          text-decoration: none;
-        }
-      }
+    label {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    input {
+      background-color: transparent;
+      outline: none;
+      height: 4.8rem;
+      border-radius: 25rem;
+      color: $color-white;
+      border-color: $color-white;
+      font-size: 1.4rem;
+      font-weight: 400;
+      padding: 0 2.3rem;
+    }
+    ::placeholder {
+      color: $color-white;
+      font-size: 1.4rem;
+    }
+    .rm {
       label {
-        font-size: 1.4rem;
-        font-weight: bold;
-      }
-      input {
-        background-color: transparent;
+        font-weight: 200;
         outline: none;
-        height: 4.8rem;
-        border-radius: 25rem;
-        color: $color-white;
-        border-color: $color-white;
-        font-size: 1.4rem;
-        font-weight: 400;
-        padding: 0 2.3rem;
-      }
-      ::placeholder {
-        color: $color-white;
-        font-size: 1.4rem;
-      }
-      .rm {
-        label {
-          font-weight: 200;
-          outline: none;
-          padding-left: 0.5rem;
-          margin-top: -0.5rem;
-          &:before,
-          &:after {
-            background-color: transparent;
-          }
+        padding-left: 0.5rem;
+        margin-top: -0.5rem;
+        &:before,
+        &:after {
+          background-color: transparent;
         }
       }
     }

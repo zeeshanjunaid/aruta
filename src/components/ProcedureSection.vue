@@ -24,7 +24,7 @@
         </b-row>
 
         <div class="step-bottom">
-          <img src="../assets/images/chat-icon.png" />
+          <img :src="require(`../assets/images/${step.icon}`)" />
           <div>
             <h4>{{step.heading}}</h4>
             <p>{{step.example}}</p>
@@ -43,25 +43,25 @@ export default {
       steps: [
         {
           info: "2 seconds after start time",
-          icon: "chat-icon.png",
+          icon: "icon-chat.svg",
           heading: "Send Chat Message: Welcome!",
           example: "Sarah: Welcome to onboarding! We’re glad you’ re here!",
         },
         {
           info: "Play Video: Customer-Onboarding.mp4",
-          icon: "chat-icon.png",
+          icon: "icon-video.svg",
           heading: "5 seconds after start time",
           example: "23 min , 12 sec",
         },
         {
           info: "6 miniutes after start time",
-          icon: "chat-icon.png",
+          icon: "icon-poll.svg",
           heading: "Send Poll: Use Case",
           example: "How do you intend the user app? (4 choices)",
         },
         {
           info: "20 miniutes after start time",
-          icon: "chat-icon.png",
+          icon: "icon-offer.svg",
           heading: "Send Offer: 25%-off Business Plan",
           example: "25% off the Business Plan: expires Tuesday",
         },
