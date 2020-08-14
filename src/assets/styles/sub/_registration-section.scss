@@ -1,0 +1,97 @@
+.registration {
+  color: $color-white;
+  @media (min-width: 340px) {
+    min-width: 42rem;
+  }
+
+  .progress-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 350px) {
+      display: none;
+    }
+
+    .step {
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .icon-class {
+        border: 0.1rem solid rgba($color-white, 0.5);
+        border-radius: 100%;
+        color: rgba($color-white, 0.5);
+        font-size: 1.8rem;
+        margin-right: 0.5rem;
+      }
+      &:before {
+        height: 0.2rem;
+        width: 5rem;
+        position: absolute;
+        content: "";
+        top: 45%;
+        left: 0;
+        background-color: $color-white;
+        transform: translate(-125%, -50%);
+      }
+      &:first-child {
+        &:before {
+          display: none;
+        }
+      }
+
+      &.active {
+        color: $color-white !important;
+        .icon-class {
+          border-color: $color-white !important;
+          color: $color-white !important;
+        }
+        ~ .step {
+          color: rgba($color-white, 0.5);
+          &:before {
+            background-color: rgba($color-white, 0.5);
+          }
+        }
+      }
+    }
+  }
+
+  .registration-form {
+    padding: 4rem 0;
+    .form-group {
+      margin-bottom: 2.5rem;
+    }
+    .links {
+      display: flex;
+      justify-content: space-between;
+      .fp {
+        font-size: 1.4rem;
+        text-decoration: none;
+      }
+    }
+    label {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+    input {
+      background-color: transparent;
+      outline: none;
+      height: 4.8rem;
+      border-radius: 25rem;
+      color: $color-white;
+      border-color: $color-white;
+      font-size: 1.4rem;
+      font-weight: 400;
+      padding: 0 2.3rem;
+    }
+    ::placeholder {
+      color: $color-white;
+      font-size: 1.4rem;
+    }
+  }
+}
