@@ -1,7 +1,7 @@
 <template>
   <div class="procedure-section">
     <div class="top d-flex flex-column align-items-center">
-      <img alt="Vue logo" src="../assets/images/icon-document.png" />
+      <img alt="Vue logo" src="@/assets/images/icon-document.png" />
       <h3>
         Nemo enim ipsam
         <br />voluptatem quia voluptas sit
@@ -24,7 +24,7 @@
         </b-row>
 
         <div class="step-bottom">
-          <img :src="require(`../assets/images/${step.icon}`)" />
+          <img :src="require(`@/assets/images/${step.icon}`)" />
           <div>
             <h4>{{step.heading}}</h4>
             <p>{{step.example}}</p>

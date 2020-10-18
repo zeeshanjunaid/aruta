@@ -3,11 +3,12 @@
 @import "./variables";
 @import "./mixins";
 @import "./utilities";
-@import "./sub/procedure-section";
-@import "./sub/login-section";
-@import "./sub/registration-section";
-@import "./sub/forget-password";
-@import "./sub/reset-password";
+@import "./general/procedure-section";
+@import "./auth/auth";
+@import "./auth/login-section";
+@import "./auth/registration-section";
+@import "./auth/forget-password";
+@import "./auth/reset-password";
 
 *,
 *::after,
@@ -39,16 +40,6 @@ body {
     overscroll-behavior: none;
   }
 
-  #app {
-    background-image: url("../images/main-background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    font-family: $default-font-family;
-    color: $color-purple;
-    font-size: $default-font-size;
-    min-height: 100vh;
-  }
   .container-fluid {
     height: 100%;
     .custom-section {

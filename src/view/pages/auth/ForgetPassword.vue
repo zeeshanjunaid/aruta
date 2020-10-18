@@ -44,8 +44,8 @@
   </b-container>
 </template>
 <script>
-import Logo from "@/components/Logo";
-import ProcedureSection from "@/components/ProcedureSection";
+import Logo from "@/views/layout/components/logo/Logo";
+import ProcedureSection from "@/views/layout/components/general/ProcedureSection";
 import { required, email } from "vuelidate/lib/validators";
 export default {
   name: "ForgetPassword",
