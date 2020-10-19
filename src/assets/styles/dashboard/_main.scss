@@ -6,7 +6,8 @@
     background-repeat: no-repeat;
     font-family: $default-font-family;
     font-size: $default-font-size;
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
   }
   &-content {
     width: 100%;
@@ -17,5 +18,24 @@
     width: calc(100% - 28rem);
     min-height: 100vh;
     padding: 4rem 6rem;
+    overflow-y: scroll;
+  }
+}
+.aruta__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 21.5rem repeat(2, 1fr);
+  gap: 2rem;
+
+  .widget {
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    background-image: $gradient-primary;
+  }
+
+  .recentOrders {
+    grid-column: 1/4;
+    grid-row: 2/-1;
   }
 }
