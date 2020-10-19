@@ -10,7 +10,13 @@ export default new Router({
       path: "/",
       redirect: "/dashboard",
       component: () => import("@/view/layout/Layout"),
-      children: [],
+      children: [
+        {
+          name: "Dashboard",
+          path: "/dashboard",
+          component: () => import("@/view/pages/dashboard/Dashboard"),
+        },
+      ],
     },
     {
       path: "/",
