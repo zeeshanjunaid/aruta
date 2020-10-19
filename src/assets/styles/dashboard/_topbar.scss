@@ -2,22 +2,22 @@
   display: flex;
   // align-items: center;
   background-color: $color-white;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
   padding: 0;
-  border-radius: 1rem;
+  border-radius: 0.625rem;
   box-shadow: 0 2px 10px 0 hsla(0, 0%, 65.5%, 0.16);
   .topbar__search {
     flex-grow: 1;
     position: relative;
-    padding: 2rem;
+    padding: 1.25rem;
     &:before {
       content: "";
       position: absolute;
       top: 50%;
       left: 0;
-      transform: translate(2rem, -55%);
-      width: 2rem;
-      height: 2rem;
+      transform: translate(1.25rem, -55%);
+      width: 1.25rem;
+      height: 1.25rem;
       z-index: 10;
       opacity: 1;
       background: url("../images/icon-search.svg");
@@ -29,50 +29,50 @@
       outline: none;
       box-shadow: none;
       color: $color-black;
-      font-size: 1.4rem;
-      padding-left: 3rem;
+      font-size: 0.875rem;
+      padding-left: 1.875rem;
       position: relative;
     }
     ::placeholder {
-      font-size: 1.4rem;
+      font-size: 0.875rem;
       color: #b3bbcb;
     }
   }
   .topbar__side {
-    padding: 0 2rem;
+    padding: 0 1.25rem;
     display: flex;
     align-items: center;
-    border-left: 0.2rem solid #f2f2f2;
+    border-left: 0.125rem solid #f2f2f2;
     &-user {
       display: flex;
       align-items: center;
       span {
         color: $color-black;
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: 0.75rem;
       }
       button {
         background-color: #4bb5e0;
         border: 0px;
-        margin-left: 0.5rem;
-        padding: 0.3rem .8rem;
-        font-size: 1.6rem;
+        margin-left: 0.3125rem;
+        padding: 0.1875rem 0.5rem;
+        font-size: 1rem;
       }
       img {
-        max-width: 4.8rem;
-        margin-right: 0.5rem;
+        max-width: 3rem;
+        margin-right: 0.3rem;
       }
     }
     &-notification {
-      margin-left: 2rem;
+      margin-left: 1.25rem;
       background-color: #041d54;
-      padding: 1rem;
-      width: 4rem;
-      height: 4rem;
+      padding: 0.625rem;
+      width: 2.5rem;
+      height: 2.5rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 0.5rem;
+      border-radius: 0.3125rem;
       position: relative;
       cursor: pointer;
       &:after {
@@ -81,18 +81,18 @@
         color: $color-white;
         top: 0;
         right: 0;
-        width: 2rem;
-        height: 2rem;
+        width: 1.25rem;
+        height: 1.25rem;
         background-color: red;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.2rem;
+        font-size: 0.75rem;
         border-radius: 25rem;
-        transform: translate(1rem, -1rem);
+        transform: translate(0.625rem, -0.625rem);
       }
       img {
-        width: 1.8rem;
+        width: 1.125rem;
       }
     }
   }

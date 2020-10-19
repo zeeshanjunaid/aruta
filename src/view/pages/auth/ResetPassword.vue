@@ -1,66 +1,55 @@
 <template>
-  <b-container fluid>
-    <b-row align-v="center" align-h="center" class="custom-section">
-      <b-col lg="6" md="12" class="d-flex justify-content-center align-items-center">
-        <div class="column-left">
-          <Logo />
-          <div class="reset-password">
-            <h4 class="heading">Reset Password</h4>
-            <div class="rp-form">
-              <b-form @submit="onSubmit">
-                <b-form-group id="input-group-1" label="New Password" label-for="input-1">
-                  <b-form-input
-                    id="input-1"
-                    class="mb-2"
-                    v-model.trim="$v.password.$model"
-                    :class="{'is-invalid':validationStatus($v.password)}"
-                    type="password"
-                    required
-                  ></b-form-input>
-                  <span
-                    v-if="!$v.password.required && $v.password.$dirty"
-                    class="text-danger"
-                  >Password is required</span>
-                  <span
-                    v-if="!$v.password.minLength"
-                    class="text-danger"
-                  >Password should be at least 8 digits long</span>
-                </b-form-group>
-                <b-form-group id="input-group-2" label="Confirm Password" label-for="input-2">
-                  <b-form-input
-                    id="input-2"
-                    class="mb-2"
-                    v-model.trim="$v.repeatPassword.$model"
-                    type="password"
-                    required
-                  ></b-form-input>
-                  <span
-                    class="text-danger"
-                    v-if="!$v.repeatPassword.sameAsPassword"
-                  >Passwords must be identical.</span>
-                </b-form-group>
-                <b-button class="gradient-btn" block>Update Password</b-button>
-              </b-form>
-            </div>
-          </div>
-        </div>
-      </b-col>
-      <b-col lg="6" md="12" class="d-flex justify-content-center align-items-center">
-        <ProcedureSection />
-      </b-col>
-    </b-row>
-  </b-container>
+  <div class="reset-password">
+    <h4 class="heading">Reset Password</h4>
+    <div class="rp-form">
+      <b-form @submit="onSubmit">
+        <b-form-group
+          id="input-group-1"
+          label="New Password"
+          label-for="input-1"
+        >
+          <b-form-input
+            id="input-1"
+            class="mb-2"
+            v-model.trim="$v.password.$model"
+            :class="{ 'is-invalid': validationStatus($v.password) }"
+            type="password"
+            required
+          ></b-form-input>
+          <span
+            v-if="!$v.password.required && $v.password.$dirty"
+            class="text-danger"
+            >Password is required</span
+          >
+          <span v-if="!$v.password.minLength" class="text-danger"
+            >Password should be at least 8 digits long</span
+          >
+        </b-form-group>
+        <b-form-group
+          id="input-group-2"
+          label="Confirm Password"
+          label-for="input-2"
+        >
+          <b-form-input
+            id="input-2"
+            class="mb-2"
+            v-model.trim="$v.repeatPassword.$model"
+            type="password"
+            required
+          ></b-form-input>
+          <span class="text-danger" v-if="!$v.repeatPassword.sameAsPassword"
+            >Passwords must be identical.</span
+          >
+        </b-form-group>
+        <b-button class="gradient-btn" block>Update Password</b-button>
+      </b-form>
+    </div>
+  </div>
 </template>
 <script>
-import Logo from "@/views/layout/components/logo/Logo";
-import ProcedureSection from "@/views/layout/components/general/ProcedureSection";
 import { required, sameAs, minLength } from "vuelidate/lib/validators";
 export default {
   name: "ResetPassword",
-  components: {
-    Logo,
-    ProcedureSection,
-  },
   data() {
     return {
       password: "",

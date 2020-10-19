@@ -14,23 +14,23 @@
     height: 100%;
     background-color: $color-offWhite;
     position: relative;
-    left: 28rem;
-    width: calc(100% - 28rem);
+    left: 17.5rem;
+    width: calc(100% - 17.5rem);
     min-height: 100vh;
-    padding: 4rem 6rem;
+    padding: 2.5rem 3.75rem;
     overflow-y: scroll;
   }
 }
 .aruta__content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 21.5rem repeat(2, 1fr);
-  gap: 2rem;
+  grid-template-rows: 13.4375rem repeat(2, 1fr);
+  gap: 1.25rem;
 
   .widget {
     height: 100%;
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 0.625rem;
     background-image: $gradient-primary;
   }
 

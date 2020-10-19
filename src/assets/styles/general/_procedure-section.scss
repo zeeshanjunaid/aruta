@@ -1,44 +1,44 @@
 .procedure-section {
   .top {
-    padding: 2rem 8rem;
+    padding: 1.25rem 5rem;
     @media (max-width: 992px) {
-      padding: 2rem 4rem;
+      padding: 1.25rem 2.5rem;
     }
     img {
-      margin-bottom: 2rem;
-      max-width: 4.2rem;
+      margin-bottom: 1.25rem;
+      max-width: 2.625rem;
     }
     h3 {
-      font-size: 2.8rem;
+      font-size: 1.75rem;
       color: $color-white;
       text-align: center;
       font-weight: 400;
-      margin-bottom: 1rem;
+      margin-bottom: 0.625rem;
     }
     p {
-      font-size: 1.8rem;
+      font-size: 1.125rem;
       color: $color-white;
       text-align: center;
       font-weight: 200;
     }
     a {
-      margin-top: 1rem;
-      font-size: 1.2rem;
+      margin-top: 0.625rem;
+      font-size: 0.75rem;
     }
   }
   .steps {
-    margin-top: 3rem;
-    padding: 0 8rem;
+    margin-top: 1.875rem;
+    padding: 0 5rem;
     @media (max-width: 992px) {
-      padding: 8rem;
+      padding: 5rem;
     }
 
     .step {
-      margin: 0 4rem;
+      margin: 0 2.5rem;
       position: relative;
       transition: all 0.5s;
       margin: 0 auto;
-      margin-bottom: 1.5rem !important;
+      margin-bottom: 0.9375rem !important;
       @media (min-width: 1300px) {
         width: 70%;
       }
@@ -48,10 +48,10 @@
         left: 0;
         top: 0;
         background-color: $color-white;
-        width: 0.8rem;
-        height: 0.8rem;
+        width: 0.5rem;
+        height: 0.5rem;
         border-radius: 50%;
-        transform: translate(-2.5rem, 0.9rem);
+        transform: translate(-1.5625rem, 0.5625rem);
       }
       &:after {
         position: absolute;
@@ -59,10 +59,10 @@
         left: 0;
         top: 0;
         background-color: $color-white;
-        width: 0.15rem;
+        width: 0.09375rem;
         height: 94%;
         border-radius: 25rem;
-        transform: translate(-2.125rem, 2.3rem);
+        transform: translate(-1.35rem, 1.4375rem);
       }
       &:last-child {
         &:after {
@@ -76,25 +76,29 @@
       }
       .step-top {
         margin-bottom: 0.25rem;
+        .col {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
         span {
           color: $color-white;
-          font-size: 1.2rem;
+          font-size: 0.75rem;
           font-weight: 200;
         }
       }
       .step-bottom {
         background-color: $color-white;
-        border-radius: 1rem;
-        padding: 0.75rem 1rem;
+        border-radius: 0.625rem;
+        padding: 0.46875rem 0.625rem;
         display: grid;
         width: 100%;
         transition: all 0.5s;
         grid-template-columns: 1fr 9fr;
         align-items: center;
         img {
-          width: 5rem;
+          width: 3.125rem;
           justify-self: right;
-          margin-right: 1rem;
+          margin-right: 0.625rem;
         }
         div {
           padding: 0 1rem 0 0;
@@ -102,12 +106,11 @@
           h4 {
             color: $color-dark-blue;
             font-weight: bold;
-            font-size: 1.4rem;
-            //   margin-top: 1rem;
+            font-size: 0.875rem;
           }
           p {
             color: $color-grey;
-            font-size: 1rem;
+            font-size: 0.625rem;
             margin-bottom: 0;
             font-weight: 200;
           }

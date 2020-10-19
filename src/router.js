@@ -32,6 +32,16 @@ export default new Router({
           path: "/registration",
           component: () => import("@/view/pages/auth/Registration"),
         },
+        {
+          name: "ForgetPassword",
+          path: "/forget-password",
+          component: () => import("@/view/pages/auth/ForgetPassword"),
+        },
+        {
+          name: "ResetPassword",
+          path: "/reset-password",
+          component: () => import("@/view/pages/auth/ResetPassword"),
+        },
       ],
     },
   ],

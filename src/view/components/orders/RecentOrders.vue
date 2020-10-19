@@ -4,8 +4,8 @@
       <b-row class="recentOrders__header">
         <h2>Recent Orders</h2>
         <div class="recentOrders__btn-group">
-          <a href="/" class="btn btn-large gradient-btn">Assign Orders</a>
-          <a class="btn btn-large gradient-btn" href="/">Complete Orders</a>
+          <button class="btn btn-large gradient-btn">Assign Orders</button>
+          <button class="btn btn-large gradient-btn">Complete Orders</button>
         </div>
       </b-row>
       <b-row>
@@ -176,31 +176,31 @@ export default {
   overflow: hidden;
   box-shadow: 0 2px 10px 0 hsla(0, 0%, 65.5%, 0.16);
   background-color: #fff;
-  border-radius: 1rem;
-  padding: 4rem;
+  border-radius: 0.625rem;
+  padding: 2.5rem;
   &__header {
     justify-content: space-between;
     align-items: center;
     h2 {
-      font-size: 2rem;
+      font-size: 1.25rem;
       font-weight: 600;
     }
   }
   &__table {
     width: 100%;
-    margin: 2rem 0;
+    margin: 1.25rem 0;
 
     thead {
       background-color: #e5f2ff;
 
       color: #0084ff;
       tr {
-        border-radius: 1rem;
+        border-radius: 0.625rem;
       }
       th {
-        padding: 3rem 1rem;
+        padding: 1.875rem 0.625rem;
         &:first-child {
-          padding: 3rem 2rem;
+          padding: 1.875rem 1.25rem;
         }
       }
     }
@@ -212,19 +212,19 @@ export default {
         }
       }
       td {
-        padding: 2rem 1rem;
-        font-size: 1.6rem;
+        padding: 1.25rem 0.625rem;
+        font-size: 1rem;
       }
       .user-container {
         display: flex;
         align-items: center;
         justify-content: flex-start;
         img {
-          max-width: 4.4rem;
-          margin-right: 1rem;
+          max-width: 2.75rem;
+          margin-right: 0.625rem;
         }
         h2 {
-          font-size: 1.6rem;
+          font-size: 1rem;
           line-height: 1.6;
         }
       }
@@ -236,14 +236,14 @@ export default {
   }
   &__btn-group {
     .btn {
-      border-radius: 1.5rem;
-      font-size: 1.4rem;
-      padding: 1.2rem 3rem;
+      border-radius: 0.94rem;
+      font-size: 0.875rem;
+      padding: 0.75rem 1.875rem;
       &:first-child {
         background: #fff !important;
         color: #828282;
-        border: 0.1rem solid #828282;
-        margin-right: 1rem;
+        border: 0.06rem solid #828282;
+        margin-right: 0.625rem;
       }
     }
   }
